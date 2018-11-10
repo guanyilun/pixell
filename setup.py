@@ -18,8 +18,8 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
 requirements       = []
-setup_requirements = []
-test_requirements  = []
+setup_requirements = ["pytest-runner"]
+test_requirements  = ["pytest"]
 
 compile_opts = {
     'extra_compile_args': ['-std=c99','-fopenmp', '-Wno-strict-aliasing'],
